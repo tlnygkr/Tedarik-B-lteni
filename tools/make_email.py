@@ -11,7 +11,7 @@ import html, json, re, sys
 
 src, out = sys.argv[1], sys.argv[2]
 use_logo = "--logo" in sys.argv[3:]
-URL = "https://tlnygkr.github.io/Tedarik-B-lteni/"
+URL = "https://peli-tedarik-bulteni.tlnygkr-f22.workers.dev/"
 page = open(src, encoding="utf-8").read()
 m = re.search(r'<script id="bulletin-data" type="application/json">(.*?)</script>', page, re.S)
 D = json.loads(m.group(1))
