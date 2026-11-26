@@ -156,16 +156,68 @@ for i, s in enumerate(D.get("stories", []), 1):
         f'<div style="font:12px {SANS};color:{FAINT};padding-top:10px">Kaynaklar: {srcs}</div>'
         f'</td></tr></table></td></tr>')
 
-# Özet e-posta: başlık + günün özeti, ardından doğrudan pano butonu
+# Vitrin e-posta (varsayılan): başlık + özet + risk şeridi + 3 temel rakam + başlıklar + pano butonu
 if not FULL:
     rows = rows[:2]
+    # Risk şeridi
+    if D.get("risk"):
+        rows.append(section("Risk barometresi"))
+        chips = []
+        for r in D["risk"]:
+            lv, fg, bg = LEVEL.get(r.get("level"), LEVEL["amber"])
+            arrow = {"up": "&#8599;", "down": "&#8600;"}.get(r.get("trend"), "&#8594;")
+            chips.append(
+                f'<td width="20%" align="center" style="padding:0 3px">'
+                f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>'
+                f'<td align="center" bgcolor="{bg}" style="background:{bg};border-radius:8px;padding:9px 4px">'
+                f'<div style="font:bold 12px {SANS};color:{INK}">{e(r["area"]["tr"])}</div>'
+                f'<div style="font:bold 12px {SANS};color:{fg};padding-top:3px">{lv} {arrow}</div>'
+                f'</td></tr></table></td>')
+        rows.append(f'<tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>{"".join(chips)}</tr></table></td></tr>')
+    # Üç temel rakam (Dolar, Euro, Brent)
+    figs = D.get("figures", [])[:3]
+    if figs:
+        rows.append(section("Temel göstergeler"))
+        cells = []
+        for f in figs:
+            sym, col = ARROW.get(f.get("dir"), ARROW["flat"])
+            lab = f["label"]["tr"].replace(" – TCMB döviz satış", " · TCMB satış").replace(" (anlık, $/varil)", " · $/varil")
+            cells.append(
+                f'<td width="33%" valign="top" style="padding:0 4px">'
+                f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>'
+                f'<td bgcolor="{CARD}" style="background:{CARD};border:1px solid {RULE};border-radius:10px;padding:12px 14px">'
+                f'<div style="font:12px {SANS};color:{MUTED}">{e(lab)}</div>'
+                f'<div style="font:bold 22px {SANS};color:{INK};padding:3px 0 2px">{e(f["value"]["tr"])}</div>'
+                f'<div style="font:12px {SANS};color:{col}">{sym} {e(f["change"]["tr"].split(" · ")[0])}</div>'
+                f'<div style="font:11px {SANS};color:{FAINT};padding-top:2px">{e(f["asof"]["tr"])}</div>'
+                f'</td></tr></table></td>')
+        rows.append(f'<tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>{"".join(cells)}</tr></table></td></tr>')
+    # Öne çıkan başlıklar
+    if D.get("stories"):
+        rows.append(section("Bugün öne çıkanlar"))
+        lis = ""
+        for i, st in enumerate(D["stories"], 1):
+            label, col = CATS.get(st.get("cat"), (st.get("cat", ""), BRAND))
+            pri = (f'<span style="display:inline-block;font:bold 9px {SANS};letter-spacing:.8px;color:#FFFFFF;background:#B42318;border-radius:999px;padding:2px 7px;margin-left:6px">ÖNCELİKLİ</span>'
+                   if st.get("priority") else "")
+            top = "" if i == 1 else f"border-top:1px solid {RULE};"
+            lis += (f'<tr><td valign="top" width="128" style="padding:11px 10px 11px 0;{top}">'
+                    f'<span style="display:inline-block;font:bold 10px {SANS};letter-spacing:.6px;text-transform:uppercase;color:{col};border:1px solid {col};border-radius:4px;padding:3px 6px;white-space:nowrap">{e(label)}</span></td>'
+                    f'<td valign="top" style="padding:11px 0;{top}">'
+                    f'<a href="{URL}#haberler" style="font:bold 15px/1.4 {SERIF};color:{INK};text-decoration:none">{e(st["tr"]["title"])}</a>{pri}</td></tr>')
+        rows.append(
+            f'<tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>'
+            f'<td bgcolor="{CARD}" style="background:{CARD};border:1px solid {RULE};border-radius:10px;padding:6px 18px">'
+            f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0">{lis}</table></td></tr></table></td></tr>')
 
 # Button + footer
 rows.append(
-    f'<tr><td align="center" style="padding:24px 0 8px"><table role="presentation" cellpadding="0" cellspacing="0"><tr>'
+    f'<tr><td align="center" style="padding:28px 0 8px"><table role="presentation" cellpadding="0" cellspacing="0"><tr>'
     f'<td bgcolor="{BRAND_DARK}" style="background:{BRAND_DARK};border-radius:8px">'
     f'<a href="{URL}" style="display:inline-block;background:{BRAND_DARK};color:#FFFFFF;border:1px solid {BRAND_DARK};'
-    f'font:bold 16px {SANS};text-decoration:none;padding:14px 34px;border-radius:8px">Bülten panosuna git &rarr;</a></td></tr></table></td></tr>')
+    f'font:bold 16px {SANS};text-decoration:none;padding:14px 34px;border-radius:8px">Bülten panosuna git &rarr;</a></td></tr></table>'
+    + ('' if FULL else f'<div style="font:12px/1.5 {SANS};color:{MUTED};padding-top:10px">Satın alma önerileri, tüm göstergeler, takvim, ekonomi görünümü ve haber ayrıntıları panoda.</div>')
+    + '</td></tr>')
 rows.append(
     f'<tr><td align="center" style="padding:14px 10px 0;font:12px/1.6 {SANS};color:{FAINT}">'
     f'Hafta içi her gün 08:00 ve 17:00\'da otomatik hazırlanır. Kamuya açık kaynaklardan derlenir; kritik rakamları karar öncesinde kaynağından teyit edin.</td></tr>')
