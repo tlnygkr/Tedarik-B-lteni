@@ -11,6 +11,7 @@ import html, json, re, sys
 
 src, out = sys.argv[1], sys.argv[2]
 use_logo = "--logo" in sys.argv[3:]
+FULL = "--full" in sys.argv[3:]  # varsayılan: yalnızca günün özeti + pano butonu
 URL = "https://peli-tedarik-bulteni.tlnygkr-f22.workers.dev/"
 page = open(src, encoding="utf-8").read()
 m = re.search(r'<script id="bulletin-data" type="application/json">(.*?)</script>', page, re.S)
@@ -155,10 +156,16 @@ for i, s in enumerate(D.get("stories", []), 1):
         f'<div style="font:12px {SANS};color:{FAINT};padding-top:10px">Kaynaklar: {srcs}</div>'
         f'</td></tr></table></td></tr>')
 
+# Özet e-posta: başlık + günün özeti, ardından doğrudan pano butonu
+if not FULL:
+    rows = rows[:2]
+
 # Button + footer
 rows.append(
-    f'<tr><td align="center" style="padding:26px 0 8px"><a href="{URL}" style="display:inline-block;background:{BRAND_DARK};color:#FFFFFF;'
-    f'font:bold 14px {SANS};text-decoration:none;padding:12px 26px;border-radius:8px">Bülten panosunu aç &rarr;</a></td></tr>')
+    f'<tr><td align="center" style="padding:24px 0 8px"><table role="presentation" cellpadding="0" cellspacing="0"><tr>'
+    f'<td bgcolor="{BRAND_DARK}" style="background:{BRAND_DARK};border-radius:8px">'
+    f'<a href="{URL}" style="display:inline-block;background:{BRAND_DARK};color:#FFFFFF;border:1px solid {BRAND_DARK};'
+    f'font:bold 16px {SANS};text-decoration:none;padding:14px 34px;border-radius:8px">Bülten panosuna git &rarr;</a></td></tr></table></td></tr>')
 rows.append(
     f'<tr><td align="center" style="padding:14px 10px 0;font:12px/1.6 {SANS};color:{FAINT}">'
     f'Hafta içi her gün 08:00 ve 17:00\'da otomatik hazırlanır. Kamuya açık kaynaklardan derlenir; kritik rakamları karar öncesinde kaynağından teyit edin.</td></tr>')
