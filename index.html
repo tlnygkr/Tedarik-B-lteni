@@ -46,7 +46,7 @@ html,body{margin:0;padding:0;background:#EDEBE6}
 .tb-rk-head{display:flex;justify-content:space-between;align-items:center;gap:.4em}
 .tb-rk-name{font-size:.88em;font-weight:var(--cds-font-weight-medium)}
 .tb-rk-pill{font-size:.7em;font-weight:var(--cds-font-weight-medium);color:var(--lv);background:var(--lvbg);border-radius:999px;padding:.1em .65em;white-space:nowrap}
-.tb-rk-trend{font-size:.74em;color:var(--color-fg-muted)}
+.tb-rk-trend{display:flex;align-items:center;gap:.5em;font-size:.74em;color:var(--color-fg-muted);padding:.15em 0}.tb-arw-wrap{flex:none;width:3.1em;height:3.1em;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#fff 0%,#F3F1EC 55%,#DEDAD2 100%);box-shadow:inset 0 -.12em .2em rgba(0,0,0,.12),inset 0 .12em .15em rgba(255,255,255,.9),0 .15em .35em rgba(0,0,0,.18)}.tb-arw{width:2.5em;height:2.5em;filter:drop-shadow(0 .08em .08em rgba(0,0,0,.25));transition:transform .25s ease}.tb-rk:hover .tb-arw{transform:translateY(-.08em) scale(1.06)}.tb-arw-txt{font-weight:var(--cds-font-weight-medium)}.tr-up .tb-arw-txt{color:#B42318}.tr-down .tb-arw-txt{color:#1E7B4F}
 .tb-rk-note{font-size:.74em;color:var(--color-fg-muted);line-height:1.35}
 .lv-green{--lv:var(--color-ok);--lvbg:color-mix(in srgb,var(--color-ok) 14%,transparent)}
 .lv-amber{--lv:var(--color-warn);--lvbg:color-mix(in srgb,var(--color-warn) 16%,transparent)}
@@ -441,6 +441,33 @@ window.dash = {
   dash.draw('lede', function (el) { var b = B(el); if (!b) return; el.textContent = t(b.lede) || '—'; });
   var LV = { green: 'Düşük', amber: 'Orta', red: 'Yüksek' };
   var TRD = { up: '↗ artıyor', down: '↘ azalıyor', flat: '→ sabit' };
+  // 3B görünümlü yön oku: ekstrüzyon (gölge yüzü) + degrade ön yüz + parlama
+  var TRDX = {
+    up:   { txt: 'Risk artıyor',  rot: -40, c1: '#F26B5B', c2: '#B42318', side: '#7A1610' },
+    down: { txt: 'Risk azalıyor', rot: 40,  c1: '#4CC38A', c2: '#1E7B4F', side: '#11502F' },
+    flat: { txt: 'Sabit',         rot: 0,   c1: '#B9C0C8', c2: '#6B7480', side: '#3F4650' }
+  };
+  var SVGNS = 'http://www.w3.org/2000/svg';
+  function sv(tag, attrs) { var e = document.createElementNS(SVGNS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); return e; }
+  function trendBadge(dir, i) {
+    var d = TRDX[dir] || TRDX.flat, gid = 'tg-' + i + '-' + (dir || 'flat');
+    var svg = sv('svg', { viewBox: '0 0 48 48', 'aria-hidden': 'true', 'class': 'tb-arw' });
+    var defs = sv('defs', {});
+    var g1 = sv('linearGradient', { id: gid, x1: '0', y1: '0', x2: '0', y2: '1' });
+    g1.appendChild(sv('stop', { offset: '0', 'stop-color': d.c1 }));
+    g1.appendChild(sv('stop', { offset: '1', 'stop-color': d.c2 }));
+    var g2 = sv('linearGradient', { id: gid + 'h', x1: '0', y1: '0', x2: '0', y2: '1' });
+    g2.appendChild(sv('stop', { offset: '0', 'stop-color': '#fff', 'stop-opacity': '.75' }));
+    g2.appendChild(sv('stop', { offset: '.55', 'stop-color': '#fff', 'stop-opacity': '0' }));
+    defs.appendChild(g1); defs.appendChild(g2); svg.appendChild(defs);
+    var P = 'M8 19 H26 V11 L41 24 L26 37 V29 H8 Z';
+    var g = sv('g', { transform: 'rotate(' + d.rot + ' 24 24)' });
+    g.appendChild(sv('path', { d: P, transform: 'translate(1.8 2.6)', fill: d.side }));
+    g.appendChild(sv('path', { d: P, fill: 'url(#' + gid + ')', stroke: d.side, 'stroke-width': '.8', 'stroke-linejoin': 'round' }));
+    g.appendChild(sv('path', { d: 'M9.5 20.5 H27.5 V14.5 L37.5 23.4 H9.5 Z', fill: 'url(#' + gid + 'h)' }));
+    svg.appendChild(g);
+    return h('span', { cls: 'tb-rk-trend tr-' + (TRDX[dir] ? dir : 'flat') }, [h('span', { cls: 'tb-arw-wrap' }, [svg]), h('span', { cls: 'tb-arw-txt', text: d.txt })]);
+  }
   dash.draw('risk', function (el) {
     var b = B(el); if (!b) return;
     var R = b.risk || [];
@@ -449,7 +476,7 @@ window.dash = {
       var lv = LV[r.level] ? r.level : 'amber';
       return h('div', { cls: 'tb-rk lv-' + lv, id: 'risk-' + i }, [
         h('div', { cls: 'tb-rk-head' }, [h('span', { cls: 'tb-rk-name', text: t(r.area) }), h('span', { cls: 'tb-rk-pill', text: LV[lv] })]),
-        h('span', { cls: 'tb-rk-trend', text: TRD[r.trend] || TRD.flat }),
+        trendBadge(r.trend, i),
         h('span', { cls: 'tb-rk-note', text: t(r.note) })
       ]);
     }));
