@@ -5,17 +5,127 @@
    "en": "Friday, 27 November 2026"
   },
   "slot": {
-   "tr": "Sabah baskısı (08:00)",
-   "en": "Morning edition (08:00)"
+   "tr": "Öğleden sonra baskısı (17:00)",
+   "en": "Afternoon edition (17:00)"
   },
   "generated": {
-   "tr": "Hazırlanma: 27.11.2026 07:55 TSİ",
-   "en": "Compiled: 27 Nov 2026 07:55 TRT"
+   "tr": "Hazırlanma: 27.11.2026 16:52 TSİ",
+   "en": "Compiled: 27 Nov 2026 16:52 TRT"
   }
  },
  "lede": {
-  "tr": "Körfez'deki çatışma artık enerji altyapısını doğrudan hedef alıyor: Husilerin Suudi rafinerilerine saldırıları ve Hürmüz'deki mayın olayları petrolde risk primini yeniden yükseltti, Kızıldeniz limanlarına yönelik tehditler de Süveyş dönüşünü belirsizleştiriyor. Konteyner navlununda Asya–Akdeniz hattı 1 Aralık sürşarjları öncesinde yükselişini sürdürüyor. Yurt içinde Resmî Gazete'de AB ile Yetkilendirilmiş Yükümlü karşılıklı tanıma kararı gümrük işlemleri açısından olumlu bir gelişme.",
-  "en": "The Gulf conflict is now hitting energy infrastructure directly: Houthi strikes on Saudi refineries and mine incidents in Hormuz have pushed oil's risk premium back up, while threats to Red Sea ports cloud the return to Suez. In container freight, Asia–Med rates keep climbing ahead of 1 December surcharges. At home, the Official Gazette's EU mutual recognition of Authorised Economic Operator status is a positive for customs procedures."
+  "tr": "Sabahtan bu yana Körfez'deki saldırıların bölgeye yayıldığı ve petrolde risk priminin yüksek kaldığı görülüyor; Pazar günkü OPEC+ toplantısından politika değişikliği beklenmiyor. TCMB'nin bugün belirlediği kurlar dünküne yakın kalırken borsa gün içinde sert yükseldi ve kuru baskılayan yeni bir gelişme olmadı. Navlunda Akdeniz hattındaki yükseliş ve 1 Aralık sürşarjları gündemin başında kalmaya devam ediyor.",
+  "en": "Since this morning, the Gulf attacks have spread further across the region and oil's risk premium remains elevated; no policy change is expected from Sunday's OPEC+ meeting. Today's CBRT rates stayed close to yesterday's, the stock market rallied sharply intraday, and nothing new pressured the lira. In freight, rising Med rates and the 1 December surcharges remain at the top of the agenda."
+ },
+ "risk": [
+  {
+   "area": {
+    "tr": "Navlun",
+    "en": "Freight"
+   },
+   "level": "red",
+   "trend": "flat",
+   "note": {
+    "tr": "Akdeniz yukarı, 1 Aralık sürşarjları",
+    "en": "Med rates up, 1 Dec surcharges"
+   }
+  },
+  {
+   "area": {
+    "tr": "Kur",
+    "en": "FX"
+   },
+   "level": "amber",
+   "trend": "flat",
+   "note": {
+    "tr": "TCMB kuru yatay, piyasa sakin",
+    "en": "CBRT rate steady, market calm"
+   }
+  },
+  {
+   "area": {
+    "tr": "Enerji",
+    "en": "Energy"
+   },
+   "level": "red",
+   "trend": "up",
+   "note": {
+    "tr": "Körfez saldırıları yayılıyor",
+    "en": "Gulf attacks spreading"
+   }
+  },
+  {
+   "area": {
+    "tr": "Hammadde",
+    "en": "Raw materials"
+   },
+   "level": "amber",
+   "trend": "flat",
+   "note": {
+    "tr": "Körfez petrokimyada gecikme riski",
+    "en": "Gulf petchem delay risk"
+   }
+  },
+  {
+   "area": {
+    "tr": "Mevzuat",
+    "en": "Regulation"
+   },
+   "level": "green",
+   "trend": "flat",
+   "note": {
+    "tr": "AB YYS tanıma; yeni önlem yok",
+    "en": "EU AEO recognition; no new measures"
+   }
+  }
+ ],
+ "actions": {
+  "abroad": [
+   {
+    "tag": "today",
+    "ref": 2,
+    "tr": "Aralık Asya yüklemelerinde navlunun PSS ve yeni FAK dahil toplam bedelle 1 Aralık öncesinde sabitlenmesi değerlendirilmeli.",
+    "en": "Fixing freight for December Asia shipments on an all-in basis including PSS and new FAK before 1 December should be considered."
+   },
+   {
+    "tag": "week",
+    "ref": 0,
+    "tr": "Süveyş/Kızıldeniz ve Körfez üzerinden planlanan yüklemelerde teslim tarihlerine tampon eklenmesi ve savaş riski sürşarjlarının yazılı teyit edilmesi önerilir.",
+    "en": "Adding buffers to delivery dates for shipments via Suez/Red Sea and the Gulf, and getting written confirmation of war-risk surcharges, is recommended."
+   },
+   {
+    "tag": "week",
+    "ref": 1,
+    "tr": "Petrokimya kökenli ithal hammaddelerde Aralık tekliflerinde kısa opsiyon süresi istenmesi ve büyük hacimlerin OPEC+ kararı sonrasına kademelendirilmesi önerilir.",
+    "en": "Asking for short option periods on December offers for petrochemical-based imported materials, and staggering large volumes until after the OPEC+ decision, is recommended."
+   },
+   {
+    "tag": "watch",
+    "ref": 5,
+    "tr": "AB'li tedarikçilerin ve gümrük müşavirlerinin YYS durumunun teyit edilmesi faydalı olabilir.",
+    "en": "Checking the AEO status of EU suppliers and customs brokers may be worth considering."
+   }
+  ],
+  "domestic": [
+   {
+    "tag": "week",
+    "ref": 3,
+    "tr": "Döviz endeksli yerli faturaların ve ödemelerin zamanlamasının 10 Aralık faiz kararı öncesinde finans ekibiyle birlikte planlanması önerilir.",
+    "en": "Planning the timing of FX-indexed domestic invoices and payments with the finance team ahead of the 10 December rate decision is recommended."
+   },
+   {
+    "tag": "watch",
+    "ref": 4,
+    "tr": "Gaz maliyetine dayalı yerli fiyat revizyonu taleplerinin spot gaz referans fiyatının yatay seyriyle karşılaştırılması faydalı olabilir.",
+    "en": "Comparing gas-cost-based domestic price revision requests with the flat spot gas reference price may be worth considering."
+   },
+   {
+    "tag": "watch",
+    "ref": 1,
+    "tr": "Ambalaj filmi ve solvent gibi petrokimya kökenli yerli alımlarda mevcut tekliflerin geçerlilik sürelerinin kontrol edilmesi değerlendirilebilir.",
+    "en": "Checking validity of existing quotes on petrochemical-based domestic purchases such as packaging film and solvents may be worth considering."
+   }
+  ]
  },
  "figures": [
   {
@@ -24,23 +134,23 @@
     "en": "USD/TRY – CBRT selling rate"
    },
    "value": {
-    "tr": "50,6777",
-    "en": "50.6777"
+    "tr": "50,6955",
+    "en": "50.6955"
    },
    "dir": "up",
    "change": {
-    "tr": "Piyasa 07:49: 50,79",
-    "en": "Market 07:49: 50.79"
+    "tr": "+0,0178 (+%0,04) · alış 50,6044",
+    "en": "+0.0178 (+0.04%) · buying 50.6044"
    },
    "asof": {
-    "tr": "26 Kas TCMB 15:30 kuru · bugün geçerli",
-    "en": "26 Nov CBRT 15:30 rate · valid today"
+    "tr": "27 Kas, TCMB 15:30 gösterge kuru",
+    "en": "27 Nov, CBRT 15:30 indicative rate"
    },
    "url": "https://turkiye.gov.tr/doviz-kurlari",
    "tcmb": {
-    "date": "2026-11-26",
-    "buy": "50.5866",
-    "sell": "50.6777"
+    "date": "2026-11-27",
+    "buy": "50.6044",
+    "sell": "50.6955"
    }
   },
   {
@@ -49,23 +159,23 @@
     "en": "EUR/TRY – CBRT selling rate"
    },
    "value": {
-    "tr": "55,5968",
-    "en": "55.5968"
+    "tr": "55,6058",
+    "en": "55.6058"
    },
    "dir": "up",
    "change": {
-    "tr": "Piyasa 07:49: 55,81",
-    "en": "Market 07:49: 55.81"
+    "tr": "+0,0090 (+%0,02) · alış 55,5058",
+    "en": "+0.0090 (+0.02%) · buying 55.5058"
    },
    "asof": {
-    "tr": "26 Kas TCMB 15:30 kuru · bugün geçerli",
-    "en": "26 Nov CBRT 15:30 rate · valid today"
+    "tr": "27 Kas, TCMB 15:30 gösterge kuru",
+    "en": "27 Nov, CBRT 15:30 indicative rate"
    },
    "url": "https://turkiye.gov.tr/doviz-kurlari",
    "tcmb": {
-    "date": "2026-11-26",
-    "buy": "55.4968",
-    "sell": "55.5968"
+    "date": "2026-11-27",
+    "buy": "55.5058",
+    "sell": "55.6058"
    }
   },
   {
@@ -74,19 +184,39 @@
     "en": "Brent crude (live, $/bbl)"
    },
    "value": {
-    "tr": "92,33",
-    "en": "92.33"
+    "tr": "91,58",
+    "en": "91.58"
+   },
+   "dir": "down",
+   "change": {
+    "tr": "−0,09 (−%0,10)",
+    "en": "−0.09 (−0.10%)"
+   },
+   "asof": {
+    "tr": "27 Kas, 16:29 TSİ (BigPara/Foreks)",
+    "en": "27 Nov, 16:29 TRT (BigPara/Foreks)"
+   },
+   "url": "https://bigpara.hurriyet.com.tr/kobi/dunya-emtia-borsalari/brent-petrol/"
+  },
+  {
+   "label": {
+    "tr": "Doğalgaz spot – Türkiye GRF (TL/1000 m³)",
+    "en": "Natural gas spot – Türkiye GRF (TRY/1000 m³)"
+   },
+   "value": {
+    "tr": "20.674,76",
+    "en": "20,674.76"
    },
    "dir": "up",
    "change": {
-    "tr": "+0,66 (+%0,72)",
-    "en": "+0.66 (+0.72%)"
+    "tr": "+11,91 (+%0,06)",
+    "en": "+11.91 (+0.06%)"
    },
    "asof": {
-    "tr": "27 Kas, 07:35 TSİ (BigPara/Foreks)",
-    "en": "27 Nov, 07:35 TRT (BigPara/Foreks)"
+    "tr": "26 Kas gaz günü (EPİAŞ)",
+    "en": "26 Nov gas day (EPİAŞ)"
    },
-   "url": "https://bigpara.hurriyet.com.tr/kobi/dunya-emtia-borsalari/brent-petrol/"
+   "url": "https://finans.mynet.com/haber/detay/ekonomi/spot-piyasada-dogal-gaz-fiyatlari-27-kasim-2026/585323/"
   },
   {
    "label": {
@@ -169,171 +299,7 @@
    "url": "https://www.capital.com.tr/haberler/tum-haberler/tuik-2026-yili-ekim-ayi-enflasyon-rakamlarini-acikladi"
   }
  ],
- "stories": [
-  {
-   "cat": "geo",
-   "priority": true,
-   "tr": {
-    "title": "Husiler Suudi rafinerilerini vurdu: Ras Tanura'nın ardından Cizan'da operasyonlar kısmen durdu",
-    "summary": "Husiler 25 Kasım'da Suudi Arabistan'ın en büyük rafinerisi Ras Tanura'yı (550 bin varil/gün) hedef aldı; Suudi tarafı dört İHA'nın düşürüldüğünü açıkladı, bir denizcilik kaynağı terminalde yüklemelerin durduğunu aktardı. 26 Kasım'da Kızıldeniz kıyısındaki Cizan rafinerisine (400 bin varil/gün) düşen mermi yangına yol açtı; Suudi Enerji Bakanlığı bir işçinin öldüğünü ve bazı operasyonların geçici olarak durduğunu bildirdi. Husiler ayrıca Cidde, Cizan, Yanbu ve King Fahd Sanayi Limanı'nı hedef gösterip gemilerin çekilmesini istemişti; hatlar şimdilik Cidde seferlerini sürdürüyor ancak sürşarj ekliyor.",
-    "impact": "Saldırılar Kızıldeniz'deki Suudi limanlarını ve Süveyş'e dönüşü doğrudan riske sokuyor; Süveyş rotasıyla planlanan Asya yüklemelerinde Ümit Burnu senaryosuna göre teslim tamponu bırakılması ve forwarder'lardan olası savaş riski sürşarjlarının yazılı teyidinin alınması önerilir."
-   },
-   "en": {
-    "title": "Houthis hit Saudi refineries: after Ras Tanura, Jazan partly halts operations",
-    "summary": "On 25 November the Houthis targeted Ras Tanura, Saudi Arabia's largest refinery (550,000 b/d); Riyadh said four drones were downed, and a shipping source said loadings at the terminal were halted. On 26 November a projectile struck the Jazan refinery (400,000 b/d) on the Red Sea coast, causing a fire; the Saudi energy ministry said one worker was killed and some operations were temporarily suspended. The Houthis had also named Jeddah, Jazan, Yanbu and King Fahd Industrial Port as targets and told ships to leave; carriers are still calling Jeddah for now but adding surcharges.",
-    "impact": "The attacks put Saudi Red Sea ports and the return to Suez directly at risk; leaving delivery buffers based on a Cape of Good Hope scenario for Asian shipments planned via Suez, and obtaining written confirmation of possible war-risk surcharges from forwarders, is recommended."
-   },
-   "sources": [
-    {
-     "name": "The National (26 Kas)",
-     "url": "https://www.thenationalnews.com/business/energy/2026/11/26/oil-rebounds-to-95-per-barrel-after-saudi-refinery-attack/"
-    },
-    {
-     "name": "Spokesman-Review / Bloomberg (26 Kas)",
-     "url": "https://www.spokesman.com/stories/2026/nov/26/oil-climbs-as-yemens-houthi-rebels-strike-key-saud/"
-    },
-    {
-     "name": "SeaVantage (26 Kas)",
-     "url": "https://www.seavantage.com/blog/houthis-threaten-saudi-red-sea-ports-november-2026"
-    }
-   ]
-  },
-  {
-   "cat": "geo",
-   "priority": true,
-   "tr": {
-    "title": "Hürmüz'de mayın olayları sürüyor; İran açılış için ABD ablukasının kaldırılmasını şart koşuyor",
-    "summary": "İran ordusu 25 Kasım'da Hürmüz'deki 'yasak bölgede' bir tankerin deniz mayınına çarpıp alev aldığını açıkladı; Reuters en az iki geminin mayına çarptığını aktarırken UKMTO Dubai'nin yaklaşık 93 km batısında bir tanker yakınında mermi patladığını bildirdi. Tahran, Katar arabuluculuğuyla ABD'nin İran limanlarına yönelik deniz ablukasını kaldırması halinde boğazı 48 saat içinde açmayı teklif etti; Washington ise nükleer programa ilişkin taviz istiyor. Vortexa verilerine göre saldırılara rağmen Kasım'da geçişler arttı.",
-    "impact": "Körfez menşeli polimer, kimyasal ve LPG yüklemelerinde gecikme ve sigorta primi riski sürüyor; bu menşelerde teslim tarihlerinin haftalık teyit edilmesi ve Avrupa/Asya menşeli alternatif tekliflerin güncel tutulması önerilir."
-   },
-   "en": {
-    "title": "Mine incidents continue in Hormuz; Iran makes reopening conditional on lifting US blockade",
-    "summary": "Iran's army said on 25 November that a tanker hit a naval mine and caught fire in a 'restricted zone' in Hormuz; Reuters reported at least two ships striking mines, and UKMTO reported a projectile exploding near a tanker about 93 km west of Dubai. Via Qatari mediators, Tehran offered to reopen the strait within 48 hours if the US lifts its naval blockade of Iranian ports, while Washington is seeking nuclear concessions. Vortexa data show transits rose in November despite the attacks.",
-    "impact": "Delay and insurance-premium risk on Gulf-origin polymer, chemical and LPG loadings persists; confirming delivery dates weekly on these origins and keeping European/Asian alternative quotes current is recommended."
-   },
-   "sources": [
-    {
-     "name": "Yahoo Finance / Reuters (26 Kas)",
-     "url": "https://finance.yahoo.com/energy/articles/oil-rises-supply-concerns-iran-030849858.html"
-    },
-    {
-     "name": "The Fifth Skill (27 Kas)",
-     "url": "https://thefifthskill.com/oil-price-today-november-27-brent-crude-above-96-as-houthis-target-saudi-refinery-in-fresh-attack-what-are-experts-saying/"
-    }
-   ]
-  },
-  {
-   "cat": "energy",
-   "priority": false,
-   "tr": {
-    "title": "Brent iki seansta yaklaşık %6 yükseldi; Goldman Aralık tahminini 105 dolara çekti",
-    "summary": "Brent, BigPara/Foreks verisine göre 27 Kas, 07:35 TSİ itibarıyla varil başına 92,33 dolar (+%0,72); uluslararası haber kaynakları Ocak vadeli Brent'i 95–96 dolar civarında aktarıyor, fiyatlar kaynak ve kontrata göre farklılık gösteriyor. Goldman Sachs, Suudi altyapısına yönelik saldırıların ardından Aralık Brent tahminini 90 dolardan 105 dolara yükseltti. Pazar günü (29 Kasım) toplanacak OPEC+'ın, iki delegeye göre mevcut kotaları Ocak'a uzatmayı değerlendirdiği belirtiliyor; ABD Şükran Günü tatili nedeniyle işlemler ince.",
-    "impact": "Petrolde risk primi yeniden yükseliyor ve polimer, solvent ile navlun yakıt ek ücretlerine yansıyabilir; büyük hacimli petrokimya alımlarının 29 Kasım OPEC+ kararı sonrasına kademelendirilmesi ve Aralık tekliflerinde kısa opsiyon süresi istenmesi değerlendirilebilir."
-   },
-   "en": {
-    "title": "Brent up about 6% in two sessions; Goldman lifts December forecast to $105",
-    "summary": "Per BigPara/Foreks, Brent stood at $92.33/bbl as of 27 Nov, 07:35 TRT (+0.72%); international news sources quote January Brent around $95–96, so prices differ by source and contract. Goldman Sachs raised its December Brent forecast from $90 to $105 after the attacks on Saudi infrastructure. Two delegates say OPEC+, meeting on Sunday (29 November), is considering rolling current quotas over into January; trading is thin due to the US Thanksgiving holiday.",
-    "impact": "Oil's risk premium is rising again and may feed into polymer, solvent and freight bunker surcharges; staggering large petrochemical purchases until after the 29 November OPEC+ decision, and asking for short option periods on December offers, may be worth considering."
-   },
-   "sources": [
-    {
-     "name": "BigPara – Brent",
-     "url": "https://bigpara.hurriyet.com.tr/kobi/dunya-emtia-borsalari/brent-petrol/"
-    },
-    {
-     "name": "The Fifth Skill (27 Kas)",
-     "url": "https://thefifthskill.com/oil-price-today-november-27-brent-crude-above-96-as-houthis-target-saudi-refinery-in-fresh-attack-what-are-experts-saying/"
-    },
-    {
-     "name": "Spokesman-Review / Bloomberg",
-     "url": "https://www.spokesman.com/stories/2026/nov/26/oil-climbs-as-yemens-houthi-rebels-strike-key-saud/"
-    }
-   ]
-  },
-  {
-   "cat": "logistics",
-   "priority": false,
-   "tr": {
-    "title": "Drewry WCI: Şanghay–Cenova %8 artışla 4.802 dolar; 1 Aralık'ta PSS ve yeni FAK fiyatları geliyor",
-    "summary": "Drewry'nin 26 Kasım tarihli Dünya Konteyner Endeksi bileşik olarak %3 düşüşle 40'lık başına 4.032 dolara geriledi; bu beşinci haftalık düşüş ve Transpasifik zayıflığından kaynaklanıyor. Buna karşın Şanghay–Cenova hattı haftalık %8 artışla 4.802 dolara çıktı, Şanghay–Rotterdam ise 3.485 dolarda ikinci hafta sabit kaldı. Hatlar Asya–Avrupa/Akdeniz'de 1 Aralık'tan geçerli sezon sürşarjları ve daha yüksek FAK fiyatları duyurdu; Drewry Aralık'ta navlun oynaklığının sürmesini bekliyor.",
-    "impact": "Akdeniz/Türkiye varışlı Asya ithalatında navlun iki haftadır belirgin yükseliyor; Aralık yüklemelerinde navlunun PSS dahil toplam bedelle 1 Aralık öncesinde sabitlenmesi ve Ocak–Şubat kapasitesinin şimdiden ayrılması önerilir."
-   },
-   "en": {
-    "title": "Drewry WCI: Shanghai–Genoa up 8% to $4,802; PSS and new FAK rates due 1 December",
-    "summary": "Drewry's World Container Index of 26 November fell 3% to $4,032 per 40ft composite, a fifth weekly decline driven by Transpacific weakness. By contrast, Shanghai–Genoa rose 8% on the week to $4,802, while Shanghai–Rotterdam held at $3,485 for a second week. Carriers have announced peak season surcharges and higher FAK rates on Asia–Europe/Med from 1 December, and Drewry expects freight rate volatility to continue in December.",
-    "impact": "Freight on Asia imports to the Med/Türkiye has risen markedly for two weeks; fixing December freight on an all-in basis including PSS before 1 December, and booking January–February capacity now, is recommended."
-   },
-   "sources": [
-    {
-     "name": "Drewry WCI (26 Kas)",
-     "url": "https://www.drewry.co.uk/supply-chain-advisors/supply-chain-expertise/world-container-index-assessed-by-drewry"
-    },
-    {
-     "name": "MarketIntelLabs",
-     "url": "https://marketintellabs.com/research/drewry-world-container-index"
-    }
-   ]
-  },
-  {
-   "cat": "turkey",
-   "priority": false,
-   "tr": {
-    "title": "Kur: Bugün geçerli TCMB satış kuru dolarda 50,6777, euroda 55,5968 TL; piyasa her ikisinin üzerinde",
-    "summary": "TCMB'nin 26 Kasım 15:30'da belirlediği ve bugün gümrük ile faturalamada geçerli olan gösterge döviz satış kurları dolar için 50,6777 TL, euro için 55,5968 TL. Serbest piyasada saat 07:49 itibarıyla dolar 50,79 TL, euro 55,81 TL civarında işlem görüyor; yani piyasa kurları TCMB kurunun üzerinde. Piyasa, TCMB'nin 10 Aralık'taki yılın son PPK toplantısında politika faizinin %35'e indirilmesini bekliyor.",
-    "impact": "Bugünkü TCMB kuru piyasanın gerisinde kaldığından yarınki kur daha yüksek gelebilir; döviz bazlı ödemelerin ve gümrük beyanlarının zamanlamasının finans ekibiyle birlikte değerlendirilmesi ve TL bazlı tekliflerde geçerlilik süresinin 10 Aralık öncesinde kısa tutulması önerilir."
-   },
-   "en": {
-    "title": "FX: CBRT selling rate valid today is TRY 50.6777 per dollar and 55.5968 per euro; market above both",
-    "summary": "The CBRT indicative selling rates set at 15:30 on 26 November, which apply to customs and invoicing today, are TRY 50.6777 per dollar and TRY 55.5968 per euro. In the free market at 07:49 TRT, the dollar trades around TRY 50.79 and the euro around TRY 55.81, i.e. above the CBRT rates. The market expects the CBRT to cut its policy rate to 35% at the year's final MPC meeting on 10 December.",
-    "impact": "With today's CBRT rate lagging the market, tomorrow's rate may come in higher; reviewing the timing of FX payments and customs declarations with the finance team, and keeping validity short on TRY-based quotes before 10 December, is recommended."
-   },
-   "sources": [
-    {
-     "name": "Türkiye.gov.tr – TCMB kurları",
-     "url": "https://turkiye.gov.tr/doviz-kurlari"
-    },
-    {
-     "name": "Hisse.net (27 Kas)",
-     "url": "https://www.hisse.net/haber/euro-ve-dolar-gune-nasil-basladi-27-kasim-guncel-doviz-kurlari-109075"
-    },
-    {
-     "name": "Borsa Gündem",
-     "url": "https://www.borsagundem.com.tr/piyasanin-enflasyon-beklentisi-yukseldi-aralikta-faiz-indirimi-bekleniyor"
-    }
-   ]
-  },
-  {
-   "cat": "trade",
-   "priority": false,
-   "tr": {
-    "title": "Resmî Gazete: AB ile Yetkilendirilmiş Yükümlü statüsünün karşılıklı tanınması onaylandı",
-    "summary": "27 Kasım tarihli Resmî Gazete'de (sayı 33443) yayımlanan 12025 sayılı Karar ile AB–Türkiye Gümrük İşbirliği Komitesi'nin Yetkilendirilmiş Yükümlü Statüsü (YYS/AEO) programlarının karşılıklı tanınmasına ilişkin 1/2026 sayılı kararı onaylandı. Aynı sayıda 6183 sayılı Kanun kapsamındaki gecikme zammı oranı aylık %3,2 olarak belirlendi. Bugünkü sayıda ilave gümrük vergisi, anti-damping veya gözetim kararı yer almıyor.",
-    "impact": "Karşılıklı tanıma, YYS sahibi firmalar ve tedarikçiler için AB ile gümrük işlemlerinde kolaylık getirebilir; AB'li tedarikçilerin ve gümrük müşavirlerinin YYS durumunun teyit edilmesi ve uygulama ayrıntılarının izlenmesi faydalı olabilir."
-   },
-   "en": {
-    "title": "Official Gazette: EU–Türkiye mutual recognition of Authorised Economic Operator status approved",
-    "summary": "Decision No. 12025 in the 27 November Official Gazette (issue 33443) approves Decision 1/2026 of the EU–Türkiye Customs Cooperation Committee on mutual recognition of Authorised Economic Operator (AEO) programmes. The same issue sets the late-payment surcharge under Law 6183 at 3.2% per month. Today's issue contains no additional customs duty, anti-dumping or surveillance decisions.",
-    "impact": "Mutual recognition may ease EU customs procedures for AEO-certified companies and suppliers; checking the AEO status of EU suppliers and customs brokers and following implementation details may be worth considering."
-   },
-   "sources": [
-    {
-     "name": "Genç Gazete – Resmî Gazete (27 Kas)",
-     "url": "https://www.gencgazete.net/27-kasim-2026-resmi-gazete-kararlari-yayimlandi-ortak-savunma-anlasmasi-gecikme-zammi-ve-yeni-yonetmelikler"
-    }
-   ]
-  }
- ],
  "calendar": [
-  {
-   "date": {
-    "tr": "27 Kas 2026",
-    "en": "27 Nov 2026"
-   },
-   "text": {
-    "tr": "SCFI Şanghay konteyner navlun endeksi",
-    "en": "SCFI Shanghai container freight index"
-   }
-  },
   {
    "date": {
     "tr": "29 Kas 2026",
@@ -375,114 +341,150 @@
    }
   }
  ],
- "risk": [
+ "stories": [
   {
-   "area": {
-    "tr": "Navlun",
-    "en": "Freight"
+   "cat": "geo",
+   "priority": true,
+   "tr": {
+    "title": "Körfez'de saldırılar yayılıyor: Suudi rafinerilerinin ardından Kuveyt'te iki İtalyan öldü; Hürmüz akışı savaş öncesinin yarısında",
+    "summary": "The National'ın 27 Kasım tarihli haberine göre bu hafta Ras Tanura (550 bin varil/gün) ve Cizan rafinerileri hedef alındı; Cizan'daki saldırı operasyonları geçici olarak aksattı ve bir işçi hayatını kaybetti, Riyad Husileri sorumlu tuttu. Kuveyt Savunma Bakanlığı 26 Kasım'da bir İran saldırısında iki İtalyan vatandaşının öldüğünü açıkladı; Tahran ise ilgisi olmadığını belirterek soruşturmaya işbirliği teklif etti. Kpler verilerine göre 24 Kasım'a kadarki yedi günde Hürmüz'den günlük ortalama 9,25 milyon varil petrol geçti; bu, savaş öncesi seviyenin yaklaşık %54'ü.",
+    "impact": "Kızıldeniz ve Körfez limanlarına yönelik risk Süveyş dönüşünü ve Körfez menşeli yüklemeleri belirsizleştiriyor; bu güzergâhlardaki siparişlerde Ümit Burnu senaryosuna göre teslim tamponu bırakılması ve savaş riski sürşarjlarının forwarder'lardan yazılı teyit edilmesi önerilir."
    },
-   "level": "red",
-   "trend": "up",
-   "note": {
-    "tr": "Akdeniz yukarı, Suudi limanlarına tehdit",
-    "en": "Med rates up, Saudi ports threatened"
-   }
+   "en": {
+    "title": "Gulf attacks spread: after Saudi refineries, two Italians killed in Kuwait; Hormuz flows at half pre-war level",
+    "summary": "According to The National on 27 November, the Ras Tanura (550,000 b/d) and Jazan refineries were targeted this week; the Jazan strike temporarily disrupted operations and killed a worker, with Riyadh blaming the Houthis. Kuwait's defence ministry said on 26 November that an Iranian attack killed two Italian citizens; Tehran denied involvement and offered to cooperate with the investigation. Kpler data show Hormuz flows averaged 9.25 million b/d in the seven days to 24 November, about 54% of the pre-war level.",
+    "impact": "Risk to Red Sea and Gulf ports clouds the return to Suez and Gulf-origin loadings; leaving Cape-based delivery buffers on orders using these routes and getting written confirmation of war-risk surcharges from forwarders is recommended."
+   },
+   "sources": [
+    {
+     "name": "The National (27 Kas)",
+     "url": "https://www.thenationalnews.com/business/energy/2026/11/27/oil-set-to-post-weekly-gain-as-middle-east-attacks-stoke-supply-concerns/"
+    },
+    {
+     "name": "SeaVantage (26 Kas)",
+     "url": "https://www.seavantage.com/blog/houthis-threaten-saudi-red-sea-ports-november-2026"
+    }
+   ]
   },
   {
-   "area": {
-    "tr": "Kur",
-    "en": "FX"
+   "cat": "energy",
+   "priority": true,
+   "tr": {
+    "title": "Körfez saldırıları petrolde risk primini canlı tutuyor; OPEC+ Pazar günü kotaları korumaya yakın",
+    "summary": "Brent, BigPara/Foreks verisine göre 27 Kasım saat 16:29 TSİ itibarıyla varil başına 91,58 dolar (−0,09 (−%0,10)); bu kontrat önceki hafta kapanışının (92,49) hafif altında. Uluslararası kaynaklar ise yakın vadeli kontratta daha yüksek fiyatlar aktarıyor; The National, vadeli Brent'in Suudi altyapısına yönelik saldırılarla haftalık yaklaşık %7, WTI'nin yaklaşık %3 yükselişe doğru gittiğini bildirdi. 29 Kasım Pazar günü toplanacak OPEC+'ın Ocak kotalarını değiştirmemesi bekleniyor.",
+    "impact": "Petroldeki risk primi polimer, solvent ve navlun yakıt ek ücretlerine yansıyabilir; büyük hacimli petrokimya alımlarının 29 Kasım OPEC+ kararı sonrasına kademelendirilmesi ve Aralık tekliflerinde kısa opsiyon süresi istenmesi değerlendirilebilir."
    },
-   "level": "amber",
-   "trend": "flat",
-   "note": {
-    "tr": "Piyasa TCMB kurunun üzerinde",
-    "en": "Market above CBRT rate"
-   }
+   "en": {
+    "title": "Gulf attacks keep oil risk premium alive; OPEC+ set to hold quotas on Sunday",
+    "summary": "Per BigPara/Foreks, Brent stood at $91.58/bbl at 16:29 TRT on 27 November (−0.09 (−0.10%)); that contract is slightly below its previous weekly close (92.49). International sources quote higher prices for the front-month contract; The National reported futures Brent on track for a weekly gain of about 7% and WTI about 3%, driven by the attacks on Saudi infrastructure. OPEC+, meeting on Sunday 29 November, is expected to leave January quotas unchanged.",
+    "impact": "Oil's risk premium may feed into polymer, solvent and bunker surcharges; staggering large petrochemical purchases until after the 29 November OPEC+ decision and asking for short option periods on December offers may be worth considering."
+   },
+   "sources": [
+    {
+     "name": "BigPara – Brent",
+     "url": "https://bigpara.hurriyet.com.tr/kobi/dunya-emtia-borsalari/brent-petrol/"
+    },
+    {
+     "name": "The National (27 Kas)",
+     "url": "https://www.thenationalnews.com/business/energy/2026/11/27/oil-set-to-post-weekly-gain-as-middle-east-attacks-stoke-supply-concerns/"
+    }
+   ]
   },
   {
-   "area": {
-    "tr": "Enerji",
-    "en": "Energy"
+   "cat": "logistics",
+   "priority": false,
+   "tr": {
+    "title": "Navlun: Şanghay–Cenova haftalık %8 yukarıda, 1 Aralık sürşarjları yaklaşıyor; Baltık Kuru Yük Endeksi 2 ayın zirvesinde",
+    "summary": "Drewry'nin 26 Kasım tarihli WCI bileşik endeksi %3 düşüşle 40'lık başına 4.032 dolara gerilerken Şanghay–Cenova hattı %8 artışla 4.802 dolara çıktı; hatlar Asya–Avrupa/Akdeniz'de 1 Aralık'tan geçerli sezon sürşarjları ve yeni FAK fiyatları duyurdu. Baltık Kuru Yük Endeksi (BDI) 26 Kasım'da dördüncü günlük artışla 3.152 puana yükselerek 29 Eylül'den bu yana en yüksek seviyeye ulaştı. Bu haftanın SCFI verisi yayın saatinde ulaşılabilir kaynaklarda yer almadığından gösterge 20 Kasım değerinde bırakıldı.",
+    "impact": "Akdeniz/Türkiye varışlı Asya ithalatında navlun yükselişi sürüyor; Aralık yüklemelerinde navlunun PSS dahil toplam bedelle 1 Aralık öncesinde sabitlenmesi ve dökme hammaddelerde navlun maliyetinin tekliflerde ayrıca teyit edilmesi önerilir."
    },
-   "level": "red",
-   "trend": "up",
-   "note": {
-    "tr": "Suudi rafinerilerine saldırı, OPEC+ Pazar",
-    "en": "Saudi refineries hit, OPEC+ Sunday"
-   }
+   "en": {
+    "title": "Freight: Shanghai–Genoa up 8% on the week, 1 December surcharges loom; Baltic Dry Index at two-month high",
+    "summary": "Drewry's WCI composite of 26 November fell 3% to $4,032 per 40ft while Shanghai–Genoa rose 8% to $4,802; carriers have announced peak season surcharges and new FAK rates on Asia–Europe/Med from 1 December. The Baltic Dry Index rose for a fourth day on 26 November to 3,152 points, its highest since 29 September. This week's SCFI was not available in accessible sources at publication time, so the tile keeps the 20 November value.",
+    "impact": "Freight on Asia imports to the Med/Türkiye keeps rising; fixing December freight on an all-in basis including PSS before 1 December, and separately confirming freight costs in bulk raw-material offers, is recommended."
+   },
+   "sources": [
+    {
+     "name": "Drewry WCI (26 Kas)",
+     "url": "https://www.drewry.co.uk/supply-chain-advisors/supply-chain-expertise/world-container-index-assessed-by-drewry"
+    },
+    {
+     "name": "Trading Economics – BDI",
+     "url": "https://tradingeconomics.com/commodity/baltic/news/601205"
+    }
+   ]
   },
   {
-   "area": {
-    "tr": "Hammadde",
-    "en": "Raw materials"
+   "cat": "turkey",
+   "priority": false,
+   "tr": {
+    "title": "TCMB kuru: Dolar 50,6955, euro 55,6058 TL; borsa gün içinde sert yükseldi",
+    "summary": "TCMB'nin 27 Kasım 15:30'da belirlediği gösterge döviz satış kurları dolar için 50,6955 TL (önceki güne göre +%0,04), euro için 55,6058 TL (+%0,02) oldu; bu kurlar Pazartesi gümrük ve faturalamada esas alınacak. Serbest piyasada saat 16:44 itibarıyla dolar 50,79 TL civarında; BIST 100 aynı saatte %2,26 artışla 10.986 puanda. Ekotürk, HSBC'nin TCMB'nin Aralık'ta faiz indirimine ara verebileceğini değerlendirdiğini aktardı; piyasa beklentisi ise 10 Aralık'ta %35'e indirim yönündeydi.",
+    "impact": "Kur hareketi sakin seyretse de 10 Aralık faiz kararına ilişkin beklentiler ayrışıyor; döviz bazlı ödemelerin ve gümrük beyanlarının zamanlamasının finans ekibiyle birlikte planlanması ve TL bazlı tekliflerde geçerlilik süresinin kısa tutulması önerilir."
    },
-   "level": "amber",
-   "trend": "up",
-   "note": {
-    "tr": "Körfez petrokimyada gecikme riski arttı",
-    "en": "Gulf petchem delay risk rising"
-   }
+   "en": {
+    "title": "CBRT rate: dollar TRY 50.6955, euro TRY 55.6058; equities rally sharply",
+    "summary": "The CBRT indicative selling rates set at 15:30 on 27 November were TRY 50.6955 per dollar (+0.04% on the previous day) and TRY 55.6058 per euro (+0.02%); these will apply to customs and invoicing on Monday. In the free market at 16:44 TRT the dollar was around TRY 50.79, and the BIST 100 was up 2.26% at 10,986 points. Ekotürk reported HSBC's view that the CBRT may pause rate cuts in December, whereas the market had been expecting a cut to 35% on 10 December.",
+    "impact": "FX is calm but expectations for the 10 December rate decision are diverging; planning the timing of FX payments and customs declarations with the finance team and keeping validity short on TRY-based quotes is recommended."
+   },
+   "sources": [
+    {
+     "name": "Türkiye.gov.tr – TCMB kurları",
+     "url": "https://turkiye.gov.tr/doviz-kurlari"
+    },
+    {
+     "name": "Ekotürk",
+     "url": "https://www.ekoturk.com/"
+    },
+    {
+     "name": "Capital (27 Kas)",
+     "url": "https://www.capital.com.tr/haberler/tum-haberler/piyasalarda-gun-ortasi-borsa-doviz-ve-altinda-son-durum-ne-27-kasim-2026"
+    }
+   ]
   },
   {
-   "area": {
-    "tr": "Mevzuat",
-    "en": "Regulation"
+   "cat": "energy",
+   "priority": false,
+   "tr": {
+    "title": "Spot doğal gazda referans fiyat yatay: 26 Kasım gaz günü için 20.674,76 TL",
+    "summary": "AA'nın EPİAŞ verilerine dayanan 27 Kasım tarihli haberine göre spot doğal gaz piyasasında 1000 metreküpün referans fiyatı (GRF) 26 Kasım gaz günü için 20.674,76 TL oldu; bir önceki gün 20.662,85 TL idi. İşlem hacmi ise 18,1 milyon TL'den 8,7 milyon TL'ye geriledi. Fiyat Kasım boyunca 20–21 bin TL bandında seyrediyor.",
+    "impact": "Yurt içi spot gaz fiyatı Brent'teki yükselişe rağmen sabit kalıyor; gaz maliyetine duyarlı yerli tedarikçilerden (ambalaj, kimya) gelebilecek fiyat revizyonu taleplerinin bu veriyle karşılaştırılması faydalı olabilir."
    },
-   "level": "green",
-   "trend": "flat",
-   "note": {
-    "tr": "AB YYS tanıma; yeni önlem yok",
-    "en": "EU AEO recognition; no new measures"
-   }
+   "en": {
+    "title": "Spot gas reference price flat: TRY 20,674.76 for the 26 November gas day",
+    "summary": "According to an AA report of 27 November based on EPİAŞ data, the spot gas reference price (GRF) per 1,000 m³ was TRY 20,674.76 for the 26 November gas day, versus TRY 20,662.85 the day before. Trading volume fell from TRY 18.1 million to TRY 8.7 million. The price has held in a TRY 20,000–21,000 band through November.",
+    "impact": "Domestic spot gas is stable despite Brent's rise; comparing possible price-revision requests from gas-sensitive domestic suppliers (packaging, chemicals) against this data may be worth considering."
+   },
+   "sources": [
+    {
+     "name": "Mynet Finans / AA (27 Kas)",
+     "url": "https://finans.mynet.com/haber/detay/ekonomi/spot-piyasada-dogal-gaz-fiyatlari-27-kasim-2026/585323/"
+    },
+    {
+     "name": "En Son Dakika / AA (26 Kas)",
+     "url": "https://www.ensondakika.com.tr/spot-piyasada-dogal-gaz-fiyatlari-26-kasim-2026/748674/"
+    }
+   ]
+  },
+  {
+   "cat": "trade",
+   "priority": false,
+   "tr": {
+    "title": "Resmî Gazete: AB ile Yetkilendirilmiş Yükümlü statüsünün karşılıklı tanınması onaylandı",
+    "summary": "27 Kasım tarihli Resmî Gazete'de (sayı 33443) yayımlanan 12025 sayılı Karar ile AB–Türkiye Gümrük İşbirliği Komitesi'nin Yetkilendirilmiş Yükümlü Statüsü (YYS/AEO) programlarının karşılıklı tanınmasına ilişkin 1/2026 sayılı kararı onaylandı. Aynı sayıda 6183 sayılı Kanun kapsamındaki gecikme zammı oranı aylık %3,2 olarak belirlendi. Bugünkü sayıda ilave gümrük vergisi, anti-damping veya gözetim kararı yer almıyor.",
+    "impact": "Karşılıklı tanıma, YYS sahibi firmalar ve tedarikçiler için AB ile gümrük işlemlerinde kolaylık getirebilir; AB'li tedarikçilerin ve gümrük müşavirlerinin YYS durumunun teyit edilmesi ve uygulama ayrıntılarının izlenmesi faydalı olabilir."
+   },
+   "en": {
+    "title": "Official Gazette: EU–Türkiye mutual recognition of Authorised Economic Operator status approved",
+    "summary": "Decision No. 12025 in the 27 November Official Gazette (issue 33443) approves Decision 1/2026 of the EU–Türkiye Customs Cooperation Committee on mutual recognition of Authorised Economic Operator (AEO) programmes. The same issue sets the late-payment surcharge under Law 6183 at 3.2% per month. Today's issue contains no additional customs duty, anti-dumping or surveillance decisions.",
+    "impact": "Mutual recognition may ease EU customs procedures for AEO-certified companies and suppliers; checking the AEO status of EU suppliers and customs brokers and following implementation details may be worth considering."
+   },
+   "sources": [
+    {
+     "name": "Genç Gazete – Resmî Gazete (27 Kas)",
+     "url": "https://www.gencgazete.net/27-kasim-2026-resmi-gazete-kararlari-yayimlandi-ortak-savunma-anlasmasi-gecikme-zammi-ve-yeni-yonetmelikler"
+    }
+   ]
   }
- ],
- "actions": {
-  "abroad": [
-   {
-    "tag": "today",
-    "ref": 3,
-    "tr": "Aralık Asya yüklemelerinde navlunun PSS ve yeni FAK dahil toplam bedelle 1 Aralık öncesinde sabitlenmesi değerlendirilmeli.",
-    "en": "Fixing freight for December Asia shipments on an all-in basis including PSS and new FAK before 1 December should be considered."
-   },
-   {
-    "tag": "week",
-    "ref": 0,
-    "tr": "Süveyş/Kızıldeniz üzerinden planlanan yüklemelerde teslim tarihlerine Ümit Burnu senaryosuna göre tampon eklenmesi ve savaş riski sürşarjlarının forwarder'lardan yazılı teyit edilmesi önerilir.",
-    "en": "Adding Cape of Good Hope-based buffers to delivery dates for shipments planned via Suez/Red Sea, and getting written confirmation of war-risk surcharges from forwarders, is recommended."
-   },
-   {
-    "tag": "week",
-    "ref": 1,
-    "tr": "Körfez menşeli polimer ve kimyasal siparişlerinde teslim tarihlerinin haftalık teyit edilmesi ve kritik kalemlerde emniyet stoğunun korunması önerilir.",
-    "en": "Confirming delivery dates weekly on Gulf-origin polymer and chemical orders and keeping safety stock on critical items is recommended."
-   },
-   {
-    "tag": "watch",
-    "ref": 5,
-    "tr": "AB'li tedarikçilerin ve gümrük müşavirlerinin YYS durumunun teyit edilmesi faydalı olabilir.",
-    "en": "Checking the AEO status of EU suppliers and customs brokers may be worth considering."
-   }
-  ],
-  "domestic": [
-   {
-    "tag": "week",
-    "ref": 2,
-    "tr": "Petrokimya kökenli yerli alımlarda (ambalaj filmi, solvent) Aralık fiyat revizyonu taleplerine karşı mevcut tekliflerin geçerlilik sürelerinin kontrol edilmesi ve büyük hacimlerin 29 Kasım OPEC+ kararı sonrasına kademelendirilmesi değerlendirilmeli.",
-    "en": "Checking validity of existing quotes against possible December price revisions on petrochemical-based domestic purchases (packaging film, solvents), and staggering large volumes until after the 29 Nov OPEC+ decision, should be considered."
-   },
-   {
-    "tag": "watch",
-    "ref": 4,
-    "tr": "TCMB kuru piyasanın gerisinde kaldığından döviz endeksli yerli faturaların ve ödemelerin zamanlamasının finans ekibiyle birlikte planlanması faydalı olabilir.",
-    "en": "As the CBRT rate lags the market, planning the timing of FX-indexed domestic invoices and payments with the finance team may be worth considering."
-   },
-   {
-    "tag": "watch",
-    "ref": 4,
-    "tr": "10 Aralık faiz kararı öncesinde TL bazlı tekliflerde geçerlilik süresinin kısa tutulması faydalı olabilir.",
-    "en": "Keeping validity short on TRY-based quotes ahead of the 10 Dec rate decision may be worth considering."
-   }
-  ]
- }
+ ]
 }
