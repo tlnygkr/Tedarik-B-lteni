@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build the Turkish e-mail edition of the bulletin from index.html.
 
-Usage: python3 make_email.py index.html out.html [--logo]
+Usage: python3 make_email.py data/bulten.json|index.html out.html [--logo]
   --logo  include the logo as an inline image (cid:att0). When used, send the
           logo file as the FIRST attachment with inline=true.
 Prints the e-mail subject line to stdout.
@@ -14,8 +14,11 @@ use_logo = "--logo" in sys.argv[3:]
 FULL = "--full" in sys.argv[3:]  # varsayılan: yalnızca günün özeti + pano butonu
 URL = "https://peli-tedarik-bulteni.tlnygkr-f22.workers.dev/"
 page = open(src, encoding="utf-8").read()
-m = re.search(r'<script id="bulletin-data" type="application/json">(.*?)</script>', page, re.S)
-D = json.loads(m.group(1))
+if src.lower().endswith(".json"):
+    D = json.loads(page)  # data/bulten.json doğrudan
+else:
+    m = re.search(r'<script id="bulletin-data" type="application/json">(.*?)</script>', page, re.S)
+    D = json.loads(m.group(1))
 e = html.escape
 
 # Palette
