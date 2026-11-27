@@ -201,7 +201,7 @@ if not FULL:
         lis = ""
         for i, st in enumerate(D["stories"], 1):
             label, col = CATS.get(st.get("cat"), (st.get("cat", ""), BRAND))
-            pri = (f'<span style="display:inline-block;font:bold 9px {SANS};letter-spacing:.8px;color:#FFFFFF;background:#B42318;border-radius:999px;padding:2px 7px;margin-left:6px">ÖNCELİKLİ</span>'
+            pri = (f'<span style="display:inline-block;font:bold 9px {SANS};letter-spacing:.8px;color:#B42318;border:1px solid #B42318;border-radius:999px;padding:1px 7px;margin-left:6px;white-space:nowrap">&#9679; ÖNCELİKLİ</span>'
                    if st.get("priority") else "")
             top = "" if i == 1 else f"border-top:1px solid {RULE};"
             lis += (f'<tr><td valign="top" width="128" style="padding:11px 10px 11px 0;{top}">'
